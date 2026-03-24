@@ -6,7 +6,7 @@ This project is used to train developers to work effectively with GitHub Copilot
 
 ## Mandatory Guidelines
 
-1. Use Java 21 language features when they improve readability.
+1. Use Java 25 language features when they improve readability.
 2. Keep Spring components focused and testable (controller -> service separation).
 3. All public methods should have clear names and explicit return types.
 4. Add or update tests for behavior changes.

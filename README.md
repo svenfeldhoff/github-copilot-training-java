@@ -1,10 +1,10 @@
 # GitHub Copilot Training - Java Edition
 
-This repository is a Java-first training project for teams that use **GitHub Copilot in IntelliJ IDEA**.
+This repository is a Java 25-first training project for teams that use **GitHub Copilot in IntelliJ IDEA**.
 
 ## Stack
 
-- Java 21
+- Java 25
 - Spring Boot 4
 - Maven Wrapper (`mvnw`, `mvnw.cmd`)
 - JUnit 5 + Spring Boot Test
@@ -20,7 +20,7 @@ This repository is a Java-first training project for teams that use **GitHub Cop
 
 1. Clone the repository.
 2. Open the project in IntelliJ IDEA (2025.2+ recommended).
-3. Ensure JDK 21 is configured.
+3. Ensure JDK 25 is configured.
 4. Run tests:
 
 ```bash

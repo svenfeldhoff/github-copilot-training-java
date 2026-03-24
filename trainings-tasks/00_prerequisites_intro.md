@@ -1,19 +1,19 @@
 # Module 0 - Prerequisites and Intro
 
 ## Goal
-Set up IntelliJ IDEA and GitHub Copilot for a Java 21 + Spring Boot 4 workflow.
+Set up IntelliJ IDEA and GitHub Copilot for a Java 25 + Spring Boot 4 workflow.
 
 ## Checklist
 
 - Install IntelliJ IDEA Ultimate or Community (latest).
-- Install JDK 21 and configure project SDK.
+- Install JDK 25 and configure project SDK.
 - Install and sign in to GitHub Copilot plugin.
 - Verify Copilot Chat panel is available.
 
 ## Exercise
 
 1. Open the project.
-2. Run `./mvnw -v` and verify Java 21.
+2. Run `./mvnw -v` and verify Java 25.
 3. Run `./mvnw test`.
 4. Start the application and call `/actuator/health`.
 

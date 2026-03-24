@@ -20,3 +20,4 @@ Create a minimal dashboard endpoint set:
 
 - What parts did Copilot accelerate most?
 - Where did manual engineering judgment matter most?
+- Verify `GET /api/reports/summary` is visible and returns the correct schema at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).

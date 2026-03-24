@@ -22,3 +22,4 @@ Strengthen testing habits with Copilot support.
 - Integration tests assert removed fields are absent.
 - Test names clearly describe behavior.
 - Tests are deterministic and independent.
+- Reduced response schema for `POST /api/tasks` is visible at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).

@@ -20,3 +20,4 @@ Learn to guide Copilot with precise prompts and project context.
 - `owner` appears in create/list responses.
 - Validation errors are tested.
 - No existing tests are broken.
+- `owner` field is visible in the request schema at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).

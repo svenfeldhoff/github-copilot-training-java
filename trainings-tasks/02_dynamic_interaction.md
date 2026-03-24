@@ -14,6 +14,7 @@ Practice different Copilot interaction styles inside IntelliJ.
 - Each service method has a JavaDoc comment generated via inline chat.
 - `GET /api/tasks/{id}` returns the full task as JSON or 404 if not found.
 - Unit and integration tests for the new endpoint are generated and pass.
+- `GET /api/tasks/{id}` is visible and testable at [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
 
 ## Focus
 

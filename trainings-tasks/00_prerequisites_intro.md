@@ -16,6 +16,7 @@ Set up IntelliJ IDEA and GitHub Copilot for a Java 25 + Spring Boot 4 workflow.
 2. Run `./mvnw -v` and verify Java 25.
 3. Run `./mvnw test`.
 4. Start the application and call `/actuator/health`.
+5. Open [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) and verify all API endpoints are visible.
 
 ## Reflection
 

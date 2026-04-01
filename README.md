@@ -15,6 +15,8 @@ This repository is a Java 25-first training project for teams that use **GitHub 
 - Unit and integration tests
 - A structured training path in `trainings-tasks/`
 - Copilot instructions for Java/Spring in `.github/copilot-instructions.md`
+- Custom agent profiles in `.github/agents/` (for example, `.github/agents/myFixer.md` for focused fix workflows)
+- MCP server config in `.github/copilot/mcp.json` (fetch + GitHub servers, used in Module 10)
 
 ## Quick Start
 
@@ -39,13 +41,17 @@ This repository is a Java 25-first training project for teams that use **GitHub 
 
 ## Suggested Training Flow
 
-1. `trainings-tasks/00_prerequisites_intro.md`
-2. `trainings-tasks/01_context_and_control.md`
-3. `trainings-tasks/02_dynamic_interaction.md`
-4. `trainings-tasks/03_version_control.md`
-5. `trainings-tasks/04_testing_framework.md`
-6. `trainings-tasks/05_agentic_workflow.md`
-7. `trainings-tasks/06_vibe_coding.md`
+1. `trainings-tasks/00_prerequisites_intro.md` — Prerequisites and Setup
+2. `trainings-tasks/01_copilot_actions_reference.md` — Copilot Actions Reference *(keep open as a cheat sheet)*
+3. `trainings-tasks/02_context_and_control.md` — Context and Control
+4. `trainings-tasks/03_dynamic_interaction.md` — Interaction Modes
+5. `trainings-tasks/04_version_control.md` — Version Control and Review
+6. `trainings-tasks/05_testing_framework.md` — Test-Driven Development with Copilot
+7. `trainings-tasks/06_agentic_workflow.md` — Agentic Workflow
+8. `trainings-tasks/07_vibe_coding.md` — Vibe Coding
+9. `trainings-tasks/08_prompt_files_and_playbooks.md` — Prompt Files and Reusable Playbooks
+10. `trainings-tasks/09_subagents_and_capstone.md` — Custom Agents and Capstone
+11. `trainings-tasks/10_mcp_tool_integration.md` — MCP Tool Integration
 
 ## Notes
 

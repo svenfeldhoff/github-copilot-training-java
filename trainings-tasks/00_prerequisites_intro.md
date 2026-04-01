@@ -1,24 +1,71 @@
-# Module 0 - Prerequisites and Intro
+# Module 0 - Prerequisites and Setup
 
 ## Goal
-Set up IntelliJ IDEA and GitHub Copilot for a Java 25 + Spring Boot 4 workflow.
+Verify your local environment is fully working before starting guided Copilot tasks — Java 25, IntelliJ, Copilot plugin, tests green, JaCoCo reporting, and Swagger visible.
 
-## Checklist
+## What You Are Setting Up
+This project uses Java 25, Spring Boot 4, and Maven. All training modules assume the baseline is green: tests pass, coverage reports generate, and the API is reachable. You fix environment issues now, not mid-exercise.
 
-- Install IntelliJ IDEA Ultimate or Community (latest).
-- Install JDK 25 and configure project SDK.
-- Install and sign in to GitHub Copilot plugin.
-- Verify Copilot Chat panel is available.
+---
 
-## Exercise
+## 0.1 Install and Configure IntelliJ
+- Install **IntelliJ IDEA** (2025.2 or later, Ultimate or Community).
+- Open **Settings → Plugins**, search for **GitHub Copilot**, install it, and sign in.
+- Confirm the Copilot Chat panel appears in the right sidebar.
 
-1. Open the project.
-2. Run `./mvnw -v` and verify Java 25.
-3. Run `./mvnw test`.
-4. Start the application and call `/actuator/health`.
-5. Open [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) and verify all API endpoints are visible.
+## 0.2 Configure JDK 25
+Open **File → Project Structure → SDKs**, add JDK 25, and set it as the project SDK.
 
-## Reflection
+Verify in a terminal:
 
-- Which Copilot UI elements are available in IntelliJ?
-- Which project files give Copilot important context?
+```bash
+./mvnw -v
+```
+
+The output must show `Java version: 25`.
+
+## 0.3 Run the Baseline Tests
+```bash
+./mvnw test
+```
+
+All tests must pass before continuing. If any fail, read the error message and fix the environment — do not proceed with failing tests.
+
+## 0.4 Add JaCoCo with Copilot
+Open Copilot Chat in **Ask** mode. Send:
+
+> "Add the JaCoCo Maven plugin to pom.xml with prepare-agent bound to the test phase and report bound to verify. Do not change any other plugin configuration."
+
+Review the generated `pom.xml` diff before applying it.
+
+## 0.5 Generate the Coverage Report
+```bash
+./mvnw clean verify
+```
+
+Open `target/site/jacoco/index.html` in a browser. Confirm coverage percentages are visible for at least the `task` package.
+
+## 0.6 Start the Application
+```bash
+./mvnw spring-boot:run
+```
+
+Open [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health) and confirm the response is `{"status":"UP"}`.
+
+## 0.7 Verify Swagger
+Open [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
+
+Confirm all existing `/api/tasks` endpoints are listed and expandable.
+
+## 0.8 Explore the Copilot Context Files
+Open the following files and read them before the first exercise module:
+- `.github/copilot-instructions.md` — rules applied to every Copilot request.
+- `.github/agents/myFixer.md` — custom agent profile for focused fixes.
+- `.github/prompts/` — reusable prompt files (used in Module 8).
+
+Note which rules will affect code generation throughout the training.
+
+## Debrief
+- Which Copilot UI elements are available in IntelliJ (inline chat, Chat panel, completions)?
+- What did the JaCoCo report reveal about the current coverage baseline?
+- Which rules in `.github/copilot-instructions.md` are most likely to change Copilot's output quality?

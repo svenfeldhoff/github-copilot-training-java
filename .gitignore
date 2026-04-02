@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# MCP config contains token - do not commit
+.github/copilot/mcp.json

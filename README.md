@@ -52,6 +52,7 @@ This repository is a Java 25-first training project for teams that use **GitHub 
 9. `trainings-tasks/08_prompt_files_and_playbooks.md` — Prompt Files and Reusable Playbooks
 10. `trainings-tasks/09_subagents_and_capstone.md` — Custom Agents and Capstone
 11. `trainings-tasks/10_mcp_tool_integration.md` — MCP Tool Integration
+12. `trainings-tasks/11_copilot_skills_in_practice.md` — Copilot Skills: Write and Use
 
 ## Notes
 

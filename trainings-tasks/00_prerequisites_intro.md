@@ -65,7 +65,22 @@ Open the following files and read them before the first exercise module:
 
 Note which rules will affect code generation throughout the training.
 
+## 0.9 Choose the Right AI Model
+GitHub Copilot supports multiple models with different strengths and costs. Use the model selector in the Copilot Chat panel to switch models per session.
+
+**Quick guidance:**
+- **Free quota (0× multiplier):** GPT-4.1, GPT-5 mini — use for everyday completions.
+- **Budget-friendly:** Claude Haiku 4.5, GPT-5.4 mini, Grok Code Fast 1 (0.25–0.33×).
+- **Balanced (1×):** Claude Sonnet 4.6, GPT-5.3-Codex, Gemini 2.5 Pro — solid default for feature work.
+- **Complex reasoning (3×):** Claude Opus 4.6 — reserve for architecture and deep analysis.
+
+> 📖 Full model list, availability per plan, and up-to-date multipliers:
+> **[docs.github.com — Supported AI models in GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models)**
+>
+> See also **Module 1** (Copilot Actions Reference) for a detailed model comparison table.
+
 ## Debrief
 - Which Copilot UI elements are available in IntelliJ (inline chat, Chat panel, completions)?
 - What did the JaCoCo report reveal about the current coverage baseline?
 - Which rules in `.github/copilot-instructions.md` are most likely to change Copilot's output quality?
+- Which model would you pick for a quick refactor vs. a full architectural review, and why?

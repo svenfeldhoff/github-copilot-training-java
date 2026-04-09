@@ -80,3 +80,47 @@ Files in `.github/agents/` define named agents with a specific role, constraints
 
 Files in `.github/prompts/` with the `.prompt.md` extension are picked up automatically. Reference them with `#filename.prompt.md` in Chat to apply structured rules without retyping them each time. See Module 8 for hands-on usage.
 
+---
+
+## AI Model Selection Guide
+
+> **Full reference:** [Supported AI models in GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models)
+> Model availability and multipliers are subject to change — check the link above for the latest.
+
+### When to Use Which Model
+
+| Scenario | Recommended Model(s) | Why |
+|---|---|---|
+| Quick completions, low-cost everyday tasks | **GPT-4.1**, **GPT-5 mini**, **Raptor mini** | Multiplier 0× — counts against no premium quota |
+| Budget-aware tasks with good quality | **Claude Haiku 4.5**, **GPT-5.4 mini**, **Gemini 3 Flash**, **Grok Code Fast 1** | Low multiplier (0.25–0.33×) |
+| Standard feature work & code generation | **Claude Sonnet 4.6**, **GPT-5.3-Codex**, **Gemini 2.5 Pro** | Multiplier 1× — solid balance of cost and quality |
+| Multi-step reasoning, architecture decisions | **Claude Opus 4.6** | Multiplier 3× — reserve for truly complex tasks |
+| Avoid unless critical | **Claude Opus 4.6 (fast mode)** | Multiplier 30× — extremely expensive |
+
+### Premium Request Multipliers
+
+Each premium model request deducts from your plan's quota by its multiplier. `0×` models are effectively free.
+
+| Model | Provider | Multiplier (paid) | Status |
+|---|---|---|---|
+| GPT-4.1 | OpenAI | **0×** | GA |
+| GPT-5 mini | OpenAI | **0×** | GA |
+| Raptor mini | Fine-tuned GPT-5 mini | **0×** | Preview |
+| Grok Code Fast 1 | xAI | **0.25×** | GA |
+| Claude Haiku 4.5 | Anthropic | **0.33×** | GA |
+| GPT-5.4 mini | OpenAI | **0.33×** | GA |
+| Gemini 3 Flash | Google | **0.33×** | Preview |
+| Claude Sonnet 4 / 4.5 / 4.6 | Anthropic | **1×** | GA |
+| GPT-5.2 / 5.3-Codex / 5.4 | OpenAI | **1×** | GA |
+| Gemini 2.5 Pro / 3.1 Pro | Google | **1×** | GA |
+| Claude Opus 4.5 / 4.6 | Anthropic | **3×** | GA |
+| Claude Opus 4.6 (fast mode) | Anthropic | **30×** | Preview |
+
+### JetBrains IDE — Switching Models
+
+1. Open the **Copilot Chat** panel.
+2. Click the **model selector** (dropdown next to the send button).
+3. Choose the model for the current session. `Auto` lets Copilot pick based on availability.
+
+> **Tip:** Use `Auto` for most tasks. Switch to a reasoning-heavy model (Opus, GPT-5.4) only when the task genuinely requires it — refactoring architecture, analysing complex bugs, or comparing multiple design options.
+

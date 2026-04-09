@@ -13,11 +13,18 @@ By the end of this module, you will be able to:
 ---
 
 ## What we mean by "skill" in this training
-In this project, a skill is a reusable prompt artifact with a strict structure and expected behavior.
+In this project, a skill is a reusable workflow artifact with a stricter structure than a normal prompt file.
 
-For hands-on practice, you will implement a skill as a markdown prompt file in the repository and invoke it with `#filename` in Copilot Chat.
+For hands-on practice, you will implement a skill as a markdown file in `.github/skills/` and invoke it with `#filename` in Copilot Chat.
 
 This gives you a practical workflow you can version, review, and improve with your team.
+
+### Skill vs prompt file vs agent
+- A **prompt file** gives Copilot reusable instructions for one request.
+- A **skill** defines a repeatable workflow: inputs, steps, severity rules, and output format.
+- An **agent profile** controls how Copilot behaves while working autonomously.
+
+Use a skill when the same team task happens repeatedly and you want the output to look the same every time.
 
 ---
 
@@ -65,6 +72,8 @@ Use this skill when reviewing a Spring REST controller and its tests.
 ```
 
 Keep the file focused: one skill, one job, one output format.
+
+> **Tip:** If you only need lightweight reusable guidance, prefer a prompt file in `.github/prompts/`. Use a skill when the task needs stricter structure and more predictable output.
 
 ## 11.3 Add a Concrete Invocation Example
 Append this section to the same skill file:

@@ -59,9 +59,12 @@ Confirm all existing `/api/tasks` endpoints are listed and expandable.
 
 ## 0.8 Explore the Copilot Context Files
 Open the following files and read them before the first exercise module:
+- `.github/README.md` — map of prompts, skills, agents, global instructions, and MCP config.
 - `.github/copilot-instructions.md` — rules applied to every Copilot request.
 - `.github/agents/myFixer.md` — custom agent profile for focused fixes.
+- `.github/agents/myReviewer.md` — review-only agent profile for findings without code edits.
 - `.github/prompts/` — reusable prompt files (used in Module 8).
+- `.github/skills/` — reusable workflow files with stricter structure (used in Module 11).
 
 Note which rules will affect code generation throughout the training.
 

@@ -72,13 +72,19 @@ Expand each collapsed step in the Chat window to inspect what the agent read, ch
 
 ## Custom Agent Profiles (`.github/agents/`)
 
-Files in `.github/agents/` define named agents with a specific role, constraints, and model preference. Select them in the Chat panel agent picker. See `.github/agents/myFixer.md` for an example.
+Files in `.github/agents/` define named agents with a specific role, constraints, and model preference. Select them in the Chat panel agent picker. See `.github/agents/myFixer.md` for a repair-focused agent and `.github/agents/myReviewer.md` for a findings-only review agent.
 
 ---
 
 ## Reusable Prompt Files (`.github/prompts/`)
 
 Files in `.github/prompts/` with the `.prompt.md` extension are picked up automatically. Reference them with `#filename.prompt.md` in Chat to apply structured rules without retyping them each time. See Module 8 for hands-on usage.
+
+---
+
+## Skill Files (`.github/skills/`)
+
+Files in `.github/skills/` are reusable workflow definitions. Use them when you need stricter inputs, ordered steps, and a predictable output format across repeated tasks. Reference them with `#filename` in Chat. See Module 11 for hands-on usage.
 
 ---
 

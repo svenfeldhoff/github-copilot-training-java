@@ -1,6 +1,6 @@
 # API Contract Review
 
-Review the attached endpoint against the following project standards and return findings ordered by severity (Critical → Warning → Info). Include exact file and line references for every finding.
+Review the attached endpoint against the following project standards and return findings ordered by severity (Critical -> Warning -> Note). Include exact file and line references for every finding.
 
 ## Standards to enforce
 
@@ -18,7 +18,7 @@ Review the attached endpoint against the following project standards and return 
 ## Output format
 
 For each finding:
-- **Severity**: Critical / Warning / Info
+- **Severity**: Critical / Warning / Note
 - **File**: relative path
 - **Line**: line number
 - **Issue**: one-line description
